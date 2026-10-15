@@ -5,6 +5,9 @@
 
 クイズゲーム「[あおてら！](https://vibe.co.jp/izayoi/)」で、実際に出している問題です。
 
+**ブラウザで見る → [あおてら！問題集](https://vibe.co.jp/aotera/mondai/)**
+ジャンル・形式・難しさで絞り込んだり、言葉で探したりして読めます。
+
 ## 中身
 
 | ジャンル | 問題数 |
@@ -123,6 +126,7 @@
 **Aotera Quiz Dataset** — 9,965 Japanese trivia questions, free for any use including commercial (CC BY-SA 4.0).
 
 - Drawn from the live questions of the quiz game [Aotera!](https://vibe.co.jp/izayoi/).
+- Browse and search all questions in your browser: [vibe.co.jp/aotera/mondai](https://vibe.co.jp/aotera/mondai/) (Japanese).
 - 6 genres (humanities, lifestyle, sports, anime & games, science, society) × 6 formats (true/false, ordering, 4-choice, letter panel, letter scramble, 5-hint association). Difficulty 1–5.
 - Written by generative AI, fact-checked by a different AI against web sources, then reviewed twice more (single correct answer, no answer leaks in the question, no time-sensitive drift). Every question links its source (`source_url`) and the check date (`as_of`).
 - Use `data/all.jsonl` (original structure), `data/flat.jsonl` (same fields for every format) or `data/all.csv`. Field details: [docs/FORMAT.md](docs/FORMAT.md).
