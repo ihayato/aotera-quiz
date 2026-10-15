@@ -1,0 +1,32 @@
+name: 問題の間違いを知らせる
+description: 答えが違う・答えが2つある・問題文がおかしい、など
+title: "[間違い] "
+labels: ["間違い"]
+body:
+  - type: input
+    id: qid
+    attributes:
+      label: 問題の id
+      description: 16文字の番号（例 551b5ce7d1e59893）。分からなければ空のままで、問題文を下に
+    validations:
+      required: false
+  - type: dropdown
+    id: kind
+    attributes:
+      label: どんな間違いか
+      options:
+        - 答えが違う
+        - 答えが2つ以上ある
+        - 問題文に答えが見えている
+        - 古くなった（いまは答えが変わった）
+        - 問題文や字がおかしい
+        - そのほか
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: くわしく
+      description: 正しい答えと、根拠になる資料の URL があると助かります
+    validations:
+      required: true
