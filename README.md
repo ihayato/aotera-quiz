@@ -1,6 +1,6 @@
 # あおてら！ クイズ問題集
 
-日本語のクイズ問題、**49,392問**。
+日本語のクイズ問題、**96,598問**。
 無料で、商用でも使えます（CC BY-SA 4.0）。
 
 クイズゲーム「[あおてら！](https://vibe.co.jp/izayoi/)」で、実際に出している問題です。
@@ -12,21 +12,21 @@
 
 | ジャンル | 問題数 |
 |---|---:|
-| 文系の学問 | 11,543 |
-| 社会 | 10,703 |
-| スポーツ | 8,373 |
-| アニメ・ゲーム | 8,213 |
-| ライフスタイル | 7,845 |
-| 理系の学問 | 2,715 |
+| ライフスタイル | 19,048 |
+| アニメ・ゲーム | 16,310 |
+| 理系の学問 | 15,487 |
+| 社会 | 15,354 |
+| 文系の学問 | 15,208 |
+| スポーツ | 15,191 |
 
 | 形式 | 問題数 | どんな問題か |
 |---|---:|---|
-| ○× | 11,990 | 文が正しいか答える。×の問題には「正しくは」が付いています |
-| 四択 | 8,946 | 4つの中から1つ選ぶ |
-| 順番当て | 8,664 | 4つを、年代や大きさの順に並べる |
-| 文字パネル | 6,957 | 12枚の文字から選んで答えを作る |
-| 並べ替え | 6,571 | バラバラの文字を並べて答えを作る |
-| 連想 | 6,264 | 5つのヒントから、4つの中の1つを当てる |
+| ○× | 23,309 | 文が正しいか答える。×の問題には「正しくは」が付いています |
+| 順番当て | 17,776 | 4つを、年代や大きさの順に並べる |
+| 四択 | 16,961 | 4つの中から1つ選ぶ |
+| 文字パネル | 13,184 | 12枚の文字から選んで答えを作る |
+| 並べ替え | 12,779 | バラバラの文字を並べて答えを作る |
+| 連想 | 12,589 | 5つのヒントから、4つの中の1つを当てる |
 
 難しさは1〜5の5段階です。
 
@@ -79,7 +79,7 @@
 ## 作り方
 
 - 生成AIで問題を作り、別の生成AIがウェブの資料と照らして事実を確かめました。
-- そのあと、さらに2回点検しています。答えが1つに決まるか、問題文に答えが見えていないか、時間がたつと答えが変わらないか。
+- そのあと、さらに1〜2回点検しています。答えが1つに決まるか、問題文に答えが見えていないか、時間がたつと答えが変わらないか。
 - 点検で引っかかった問題は入れていません。公開の前にも、引用や答えの手がかりが気になる問題を外しました。
 - どの問題にも、確かめた資料（`source_url`）と確かめた日（`as_of`）が付いています。資料そのものの文章のライセンスは、それぞれの資料に従います。
 
@@ -115,6 +115,7 @@
 |---|---:|
 | 2026.10 | 9,965 |
 | 2026.10.25 | 49,392 |
+| 2026.11.12 | 96,598 |
 
 問題は順に増やしていきます。
 
@@ -124,12 +125,12 @@
 
 ## English
 
-**Aotera Quiz Dataset** — 49,392 Japanese trivia questions, free for any use including commercial (CC BY-SA 4.0).
+**Aotera Quiz Dataset** — 96,598 Japanese trivia questions, free for any use including commercial (CC BY-SA 4.0).
 
 - Drawn from the live questions of the quiz game [Aotera!](https://vibe.co.jp/izayoi/).
 - Browse and search all questions in your browser: [vibe.co.jp/aotera/mondai](https://vibe.co.jp/aotera/mondai/) (Japanese).
 - 6 genres (humanities, lifestyle, sports, anime & games, science, society) × 6 formats (true/false, ordering, 4-choice, letter panel, letter scramble, 5-hint association). Difficulty 1–5.
-- Written by generative AI, fact-checked by a different AI against web sources, then reviewed twice more (single correct answer, no answer leaks in the question, no time-sensitive drift). Every question links its source (`source_url`) and the check date (`as_of`).
+- Written by generative AI, fact-checked by a different AI against web sources, then reviewed once or twice more (single correct answer, no answer leaks in the question, no time-sensitive drift). Every question links its source (`source_url`) and the check date (`as_of`).
 - Use `data/all.jsonl` (original structure), `data/flat.jsonl` (same fields for every format) or `data/all.csv`. Field details: [docs/FORMAT.md](docs/FORMAT.md).
 - Please credit: `Aotera Quiz Dataset https://github.com/ihayato/aotera-quiz (CC BY-SA 4.0)`, and say so if you changed the questions. Share modified questions under CC BY-SA 4.0; the app or game that uses them does not need to.
 - Short quotations from works (lines, opening sentences) inside some questions belong to their original works and are not licensed here.
